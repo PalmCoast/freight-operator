@@ -1,0 +1,23 @@
+{
+  "name": "@freight/operator",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "4.0.111",
+    "@freight/db": "workspace:*",
+    "@freight/schema": "workspace:*",
+    "ai": "7.0.165",
+    "drizzle-orm": "0.45.4",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}

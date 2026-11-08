@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-plex), "Avenir Next", "Segoe UI", sans-serif;
+  --font-serif: var(--font-fraunces), "Iowan Old Style", Palatino, Georgia, serif;
+  --font-mono: var(--font-mono), "IBM Plex Mono", ui-monospace, monospace;
+  --color-paper: #efe6d8;
+  --color-paper-2: #f7f1e6;
+  --color-ink: #1c1712;
+  --color-ink-soft: #5e564c;
+  --color-line: #ddcfc0;
+  --color-ember: #c84b16;
+  --color-ember-soft: #f8e6da;
+  --color-pine: #1d6b45;
+  --color-pine-soft: #e4f2ea;
+  --color-brass: #8a5a12;
+  --color-brass-soft: #f8efd8;
+  --color-wine: #8e2438;
+  --color-wine-soft: #f8e4e8;
+  --color-desk: #221c17;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(900px 420px at 0% -10%, rgba(200, 75, 22, 0.12), transparent 55%),
+    linear-gradient(180deg, #f6f0e6 0%, var(--color-paper) 220px);
+  color: var(--color-ink);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: #f0c2a8;
+}
